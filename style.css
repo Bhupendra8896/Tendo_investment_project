@@ -1,0 +1,31 @@
+*{
+    margin: 0px;
+ }
+ body{
+     background-color: black;
+ }
+ .navbar{
+     display: flex;
+     height: 50px;
+     width:100vw;
+     font-size: 20px;
+     background-color:wheat;
+     justify-items: center;
+     align-items: center; 
+ }
+ .left{
+     width: 50vw;
+     align-items: start;
+      background-color: aquamarine;
+ }
+ .right{
+     width: 50vw;
+    align-items: end;
+     background-color: cyan;
+ }
+ ul{
+     display: flex;
+     list-style-type: none;
+     gap: 10px; 
+     
+ }
