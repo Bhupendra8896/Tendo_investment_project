@@ -1,31 +1,108 @@
 *{
     margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
  }
  body{
-     background-color: black;
+     background-color: rgb(32, 49, 34);
  }
  .navbar{
      display: flex;
      height: 50px;
      width:100vw;
      font-size: 20px;
-     background-color:wheat;
+     background-color:rgba(0, 255, 157, 0.603);
      justify-items: center;
      align-items: center; 
  }
  .left{
-     width: 50vw;
-     align-items: start;
-      background-color: aquamarine;
+    display: flex;
+    width: 50vw;
+   
+     
  }
  .right{
-     width: 50vw;
-    align-items: end;
-     background-color: cyan;
+    display: flex;
+    width: 50vw;   
+    flex-flow: wrap row-reverse;
+    margin-right: 5px;
+     
  }
  ul{
      display: flex;
      list-style-type: none;
-     gap: 10px; 
-     
+     gap: 15px;      
  }
+ .login-signup{
+    padding:2px;
+    background-color: rgb(169,229,38);
+    border-radius: 10px;
+    border-style: groove rgb(169,229,38);
+ }
+ .sensex:hover{
+    font-size: 25px;
+    transition: .5s;
+    color:rgb(248, 248, 248) ;
+   
+ }
+ .nifty50:hover{
+    font-size: 25px;
+    transition: .5s;
+    color:rgb(248, 248, 248) ;
+ }
+ .banknifty:hover{
+    font-size: 25px;
+    transition: .5s;
+    color:rgb(248, 248, 248) ;
+ }
+ .finnifty:hover{
+    font-size: 25px;
+    transition: .5s;
+    color:rgb(248, 248, 248) ;
+ }
+ .niftyit:hover{
+    font-size: 25px;
+    transition: .5s;
+    color:rgb(248, 248, 248) ;
+ }
+ .niftypharma:hover{
+    font-size: 25px;
+    transition: .5s;
+    color:rgb(248, 248, 248) ;
+ }
+ .navbar2{
+    background-color: rgba(23, 192, 127, 0.61);
+ }
+
+ .container{
+    display: flex;
+    flex-flow: row wrap;
+    height:auto;
+    width: auto;
+}
+.nifty50-box{
+height: 300px;
+width: 19vw;
+background-color: rgb(66, 65, 65);
+}
+.banking-box{
+height: 300px;
+width: 19vw;
+background-color: rgb(66, 65, 65);
+}
+    
+.it-box{
+height: 300px;
+width: 19vw;
+background-color: rgb(66, 65, 65);
+}
+.finance-box{
+height: 300px;
+width: 19vw;
+background-color: rgb(66, 65, 65);
+}
+.pharma-box{
+height: 300px;
+width: 19vw;
+background-color: rgb(66, 65, 65);
+
+}
