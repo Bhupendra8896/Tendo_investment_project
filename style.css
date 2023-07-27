@@ -5,12 +5,17 @@
  body{
      background-color: rgb(32, 49, 34);
  }
- .navbar{
+ img{
+   height: 50px;   
+ }
+ #navbar{
+   cursor: pointer;
      display: flex;
      height: 50px;
      width:100vw;
      font-size: 20px;
-     background-color:rgba(0, 255, 157, 0.603);
+     color: white;
+     background-color:rgba(14, 14, 14, 0.603);
      justify-items: center;
      align-items: center; 
  }
@@ -22,8 +27,8 @@
  }
  .right{
     display: flex;
-    width: 50vw;   
-    flex-flow: wrap row-reverse;
+    width: 50vw; 
+    flex-direction: row-reverse;
     margin-right: 5px;
      
  }
@@ -32,44 +37,45 @@
      list-style-type: none;
      gap: 15px;      
  }
- .login-signup{
+ #login-signup{
     padding:2px;
+    color: black;
     background-color: rgb(169,229,38);
     border-radius: 10px;
     border-style: groove rgb(169,229,38);
  }
- .sensex:hover{
+ #sensex:hover{
     font-size: 25px;
     transition: .5s;
     color:rgb(248, 248, 248) ;
    
  }
- .nifty50:hover{
+ #nifty50:hover{
     font-size: 25px;
     transition: .5s;
     color:rgb(248, 248, 248) ;
  }
- .banknifty:hover{
+ #banknifty:hover{
     font-size: 25px;
     transition: .5s;
     color:rgb(248, 248, 248) ;
  }
- .finnifty:hover{
+ #finnifty:hover{
     font-size: 25px;
     transition: .5s;
     color:rgb(248, 248, 248) ;
  }
- .niftyit:hover{
+ #niftyit:hover{
     font-size: 25px;
     transition: .5s;
     color:rgb(248, 248, 248) ;
  }
- .niftypharma:hover{
+ #niftypharma:hover{
     font-size: 25px;
     transition: .5s;
     color:rgb(248, 248, 248) ;
  }
- .navbar2{
+ #navbar2{
     background-color: rgba(23, 192, 127, 0.61);
  }
 
@@ -79,34 +85,39 @@
     height:auto;
     width: auto;
 }
-.nifty50-box{
+#nifty50-box{
 height: 300px;
-width: 19vw;
+width: 20%;
+padding: 0px;
 background-color: rgb(66, 65, 65);
 }
-.banking-box{
+#banking-box{
 height: 300px;
-width: 19vw;
+width: 20%;
+padding: 0px;
 background-color: rgb(66, 65, 65);
 }
     
-.it-box{
+#it-box{
 height: 300px;
-width: 19vw;
+width: 20%;
+padding: 0px;
 background-color: rgb(66, 65, 65);
 }
-.finance-box{
+#finance-box{
 height: 300px;
-width: 19vw;
+width: 20%;
+padding: 0px;
 background-color: rgb(66, 65, 65);
 }
-.pharma-box{
+#pharma-box{
 height: 300px;
-width: 19vw;
+width: 20%;
+padding: 0px;
 background-color: rgb(66, 65, 65);
 
 }
-.search-container {
+#search-container {
    display: flex;
    justify-content: center;
    align-items: center;
