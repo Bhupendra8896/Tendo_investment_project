@@ -1,56 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="style.css">
     <title>Tendo Investment</title>
 </head>
+
 <body>
-   <div id="header">   
-   <div id="navbar">
-    <div id="logo"><img src="./images/tendo-investments.png" alt="logo"></div>
-    <div class="nav-bar left">       
+    <div id="header">
+        <div id="navbar">
+            <div class="nav-bar left">
+                <div id="logo"><img src="./images/tendo-investments.png" alt="logo"></div>
+                <div class="search-box">
+                    <input type="text" value="  Search" id="input-box">
+                    <input type="button" id="search-button" class=" material-symbols-outlined" value="search">
+                </div>
+            </div>
+            <div class="nav-bar right">
+                <ul>
+                    <li id="searchcontainer"></li>
+                    <li id="course">Courses</li>
+                    <li id="subscription">Subscription</li>
+                    <li id="login-signup">Login/SignUP</li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <div class="nav-bar right">
-        <ul>
-            <li id="info">Info</li>
-            <li id="benifits">Benifits</li>
-            <li id="subscription" >Subscription</li>
-            <li id="login-signup">Login/SignUP</li>
-        </ul>
+    <div id="navbar-2">
+        <div id="sensex">Sensex</div>
+        <div id="nifty50">Nifty50</div>
+        <div id="banknifty">Banknifty</div>
+        <div id="finnifty">Finnifty</div>
+        <div id="niftyit"> Nifty IT</div>
+        <div id="niftypharma">Nifty Pharma</div>
     </div>
-   </div>
-   </div> 
-  <div class="container">
-    <div id="nifty50-box">Nifty50
-        <div id="kotak">Kotak Mahindra Bank</div>
-        <div id="hdfcbank">Hdfc Bank</div>
-        <div id="icicibank">ICICI Bank</div>
-        <div id="bank4"></div>
-        <div id="bank5"></div>
-        <div id="bank6"></div>
-        <div id="bank7"></div>
-        <div id="bank8"></div>
-        <div id="bank9"></div>
-        <div id="bank10"></div>
-        <div id="bank11"></div>
-        <div id="bank12"></div>
-        <div id="bank13"></div>
+    <div class="container">
+        <div id="nifty50-box">
+            <h3>Nifty50 Weightage</h3>
+            <div id="reliance">Reliance Industries Limited</div>
+            <div id="hdfc">HDFC Bank Limited</div>
+            <div id="icici">ICICI Bank Limited</div>
+            <div id="infosys">Infosys Limited</div>
+            <div id="hdfsltd">HDFC Ltd</div>
+            <div id="tcs">TCS Ltd</div>
+            <div id="itc">ITC Limited</div>
+            <div id="kotak">Kotak Mahindra Bank Limited</div>
+            <div id="l&t">L&T Ltd</div>
+            <div id="axis">Axis Bank</div>
+        </div>
+        <div id="banking-box">
+            <h3>Bank Nifty Weightage</h3>
+            <div id="hdfcbank">Hdfc Bank</div>
+            <div id="icicibank">ICICI Bank</div>
+            <div id="kotak">Kotak Mahindra Bank</div>
+            <div id="axis">Axis bank</div>
+            <div id="sbi">State Bank Of India</div>
+            <div id="Indusind">Indusind Bank</div>
+            <div id="Bob">Bank Of Baroda</div>
+            <div id="ausmall">AU Small Finance bank</div>
+            <div id="federal">Federal Bank</div>
+            <div id="bandhan">Bandhan Bank</div>
+        </div>
+        <div id="it-box">
+            <h3>Nifty IT Weightage</h3>
+            <div id="infosys">Infosys Ltd.</div>
+            <div id="tcs">TCS Ltd</div>
+            <div id="hcl">HCL Technologies Ltd. </div>
+            <div id="tech-m">Tech Mahindra Ltd. </div>
+            <div id="wipro">Wipro Ltd.</div>
+            <div id="LTI">LTI Mindtree Ltd.</div>
+            <div id="persistent">Persistent Systems Ltd.</div>
+            <div id="coforge">Coforge Ltd.</div>
+            <div id="mphasis">MphasiS Ltd.</div>
+            <div id="l&t-tech">L&T Technology Services Ltd</div>
+        </div>
+        <div id="finance-box">
+            <h3>Finnifty Weightage</h3>
+            <div id="hdfcbank">Hdfc Bank</div>
+            <div id="icicibank">ICICI Bank</div>
+            <div id="hdfc">HDFC</div>
+            <div id="sbi">State Bank Of India</div>
+            <div id="kotak">Kotak Mahindra Bank</div>
+            <div id="bajaj-fin">Bajaj Finance</div>
+            <div id="axis">Axis bank</div>
+            <div id="bajaj-fins">Bajaj Finserv</div>
+            <div id="sbi-life">SBI Life Insurance</div>
+            <div id="hdfc-life">HDFC Life Insurance</div>
+        </div>
+        <div id="pharma-box">
+            <h3>Nifty Pharma Weightage</h3>
+            <div id="sun-p">Sun Pharmaceutical Industries Ltd.</div>
+            <div id="idrreddey">Dr. Reddy’s Laboratories Ltd.</div>
+            <div id="cipla">Cipla Ltd.</div>
+            <div id="divi-lab">Divi’s Laboratories Ltd.</div>
+            <div id="lupin">Lupin Ltd.</div>
+            <div id="auro-p">Aurobindo Pharma Ltd.</div>
+            <div id="torrent-p">Torrent Pharmaceuticals Ltd.</div>
+            <div id="Alkem">Alkem Laboratories Ltd.</div>
+            <div id="zydus-p">Zydus Lifesciences Ltd.</div>
+            <div id="laurus">Laurus Labs Ltd.</div>
+        </div>
     </div>
-    <div id="banking-box">Banking Sector</div>
-    <div id="it-box">IT Sector</div>
-    <div id="finance-box">Finance Sector</div>
-    <div id="pharma-box">Pharma Sector</div>
-  </div>
-  <div>
-    <div><h3 class="learntrade">Learn to Trade</h3></div>
-    <div><h1 class=""h2search>With the world's largest trading site.</h1></div>
-    <div class="search-container">
-        <input type="text" id="search-input" placeholder="Search...">
-        <button id="search-button">Search</button>
-      </div>
-  </div>
-   
 </body>
+
 </html>
