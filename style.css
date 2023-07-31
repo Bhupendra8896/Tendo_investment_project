@@ -1,9 +1,9 @@
 * {
   margin: 0px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; 
 }
 body {
-  background-color: rgb(15, 15, 15);
+  background: url(./images/background.jpg);
 }
 img {
   height: 50px;
@@ -11,9 +11,9 @@ img {
 #navbar {
   cursor: pointer;
   display: flex;
-  height: 50px;
-  width: 100vw;
+  height: 48px;  
   align-items: center;
+  border-bottom: 2px solid white;
 }
 .left {
   display: flex;
@@ -30,46 +30,41 @@ img {
   border-radius: 20px;
   color: white;
   border: none;
-  background-color: #363535;
 }
 #search-button {
   position: relative;
-  height: 33px;
+  height: 31px;
   border-radius: 20px;
   right: 38px;
   border: none;
+  color: rgb(0, 0, 0); 
+}
+.right {
   color: aliceblue;
-  background-color: #363535;
+  display: flex;
+  width: 50vw;
+  flex-flow: wrap row-reverse;
+  margin-right: 5px;
+  justify-content: end;
+  align-items: center;
 }
-.right{
-   color: aliceblue;
-   display: flex;
-   width: 50vw;   
-   flex-flow: wrap row-reverse;
-   margin-right: 5px;
-   justify-content: end;   
-   align-items: center;
-}
-#login-signup{
-   padding:2px;
-   background-color: rgb(169,229,38);
-   border-radius: 10px;
-   border-style: groove rgb(169,229,38);
+#login-signup {
+  padding: 2px;
+  color: black;
+  background-color: rgb(169, 229, 38);
+  border-radius: 10px;
+  border-style: groove rgb(169, 229, 38);
 }
 ul {
-  padding: 0px;
+  margin: 0px;
   display: flex;
   list-style-type: none;
   gap: 15px;
-  border-radius: 10px;
-  border-style: groove rgb(169, 229, 38);
 }
 #navbar-2 {
   display: flex;
   justify-content: space-around;
-  align-content: center;
-  background-color: rgb(36, 11, 11);
-  color: aliceblue;
+  color: aliceblue; 
 }
 #sensex:hover {
   font-size: 25px;
@@ -78,79 +73,159 @@ ul {
   color: rgb(248, 248, 248);
 }
 #nifty50:hover {
-   font-size: 25px;
-   transition: 0.5s;
-   transition: 0.5s;
-   color: rgb(248, 248, 248);
- }
- #banknifty:hover {
-   font-size: 25px;
-   transition: 0.5s;
-   transition: 0.5s;
-   color: rgb(248, 248, 248);
- }
- #finnifty:hover {
-   font-size: 25px;
-   transition: 0.5s;
-   transition: 0.5s;
-   color: rgb(248, 248, 248);
- }
- #niftyit:hover {
-   font-size: 25px;
-   transition: 0.5s;
-   transition: 0.5s;
-   color: rgb(248, 248, 248);
- }
- #niftypharma:hover {
-   font-size: 25px;
-   transition: 0.5s;
-   transition: 0.5s;
-   color: rgb(248, 248, 248);
- }
+  font-size: 25px;
+  transition: 0.5s;
+  transition: 0.5s;
+  color: rgb(248, 248, 248);
+}
+#banknifty:hover {
+  font-size: 25px;
+  transition: 0.5s;
+  transition: 0.5s;
+  color: rgb(248, 248, 248);
+}
+#finnifty:hover {
+  font-size: 25px;
+  transition: 0.5s;
+  transition: 0.5s;
+  color: rgb(248, 248, 248);
+}
+#niftyit:hover {
+  font-size: 25px;
+  transition: 0.5s;
+  transition: 0.5s;
+  color: rgb(248, 248, 248);
+}
+#niftypharma:hover {
+  font-size: 25px;
+  transition: 0.5s;
+  transition: 0.5s;
+  color: rgb(248, 248, 248);
+}
 .container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: auto;
+  height: 16em;
   width: auto;
+  color: aliceblue;
+  border: 1px solid whitesmoke;
 }
 .nifty50-box {
-  height: 300px;
   width: 20%;
-  padding: 0px;
-  background-color: rgb(187, 187, 187);
+  border: 1px solid whitesmoke;
 }
 .banking-box {
-  height: 300px;
   width: 20%;
-  padding: 0px;
-  background-color: rgb(187, 187, 187);
+  border: 1px solid whitesmoke;
 }
 
 .it-box {
-  height: 300px;
   width: 20%;
-  padding: 0px;
-  background-color: rgb(187, 187, 187);
+  border: 1px solid whitesmoke;
 }
 .finance-box {
-  height: 300px;
   width: 20%;
-  padding: 0px;
-  background-color: rgb(187, 187, 187);
+  border: 1px solid whitesmoke;
 }
 .pharma-box {
-  height: 300px;
   width: 20%;
-  padding: 0px;
-  background-color: rgb(187, 187, 187);
+  border: 1px solid whitesmoke;
 }
-h4 {
+.header {
   display: flex;
-  justify-content: center;
+  height: 1.5em;
+  font-size: 18px;
+  font-weight: 500;
+  flex-wrap: wrap;
   align-items: center;
+  border-bottom: 2px solid whitesmoke;
   color: white;
-  height: 50px;
-  background-color: #363535;
-  box-shadow: none;
+}
+.otherinfo {
+  color: whitesmoke;
+}
+.other-info {
+  height: 20px;
+}
+#info-section {
+  color: aliceblue; 
+  display: flex;
+  flex-flow: row wrap;
+  margin: 10px;
+  padding:10px;
+  
+}
+#info-section img{
+  height: 8em;
+  border-radius: 50%;
+  margin: 10px;
+  padding: 10px; 
+}
+h4{
+  text-align: center;
+}
+#info {
+  color: white; 
+  width: 35em;
+  padding: 10px;  
+}
+#company-info {
+  color: white;
+  height: 25px;
+  width: 10em;
+  margin: 0px 10px 0px ;
+  padding: 10px;
+}
+#resources {
+  color: white;
+  height: 25px;
+  width: 10em;
+  padding: 10px;
+}
+#information {
+  color: white;
+  height: 25px;
+  width: 10em;
+  padding: 10px;
+}
+#support {
+  color: white;
+  height: 25px;
+  width: 10em;
+  padding: 10px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+a:hover{
+  color: gray;
+  cursor: pointer;
+
+}
+.footer-section{
+  display: flex;
+  color: white;  
+  align-items: center;
+  margin-left: 5px;
+}
+#copyright{
+display: flex;
+padding: 5px;
+align-items: center;
+}
+#copyright p{
+display: flex;
+padding: 10px;
+align-items: center;
+}
+#terms{
+display: flex;
+padding: 5px;
+align-items: center;
+}
+#terms a{
+display: flex;
+padding: 10px;
+align-items: center;
 }
