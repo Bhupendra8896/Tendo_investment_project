@@ -150,8 +150,8 @@ ul {
   color: aliceblue; 
   display: flex;
   flex-flow: row wrap;
-  margin: 10px;
-  padding:10px;
+  margin: 5px;
+  padding:5px;
   
 }
 #info-section img{
@@ -160,37 +160,41 @@ ul {
   margin: 5px;
   padding: 5px; 
 }
-h4{
+h3{
   text-align: center;
+  margin-top: 10px;
 }
 #info {
   color: white; 
   width: 35em;
-  padding: 10px;  
+  padding: 10px;
+  text-align: justify;
 }
 #company-info {
   color: white;
   height: 25px;
-  width: 10em;
-  margin: 0px 10px 0px ;
+  width: 8em;
+  margin-left:15px;
   padding: 10px;
 }
 #resources {
   color: white;
   height: 25px;
-  width: 10em;
+  width: 8em; 
+  margin-left:15px;
   padding: 10px;
 }
-#information {
+/* #information {
   color: white;
   height: 25px;
-  width: 10em;
+  width: 5em;
   padding: 10px;
-}
+} */
 #support {
   color: white;
   height: 25px;
-  width: 10em;
+  width: 8em;
+  margin-left:15px;
   padding: 10px;
 }
 
@@ -228,4 +232,10 @@ align-items: center;
 display: flex;
 padding: 10px;
 align-items: center;
+}
+@media screen(max-width: 576px){
+  .collapse{
+    overflow: hidden;
+  }
+  
 }
