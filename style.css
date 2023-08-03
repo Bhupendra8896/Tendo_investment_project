@@ -1,58 +1,60 @@
 * {
   margin: 0px;
   padding: 0px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; 
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 body {
   background: url(./images/background.jpg) center center/cover;
 }
 img {
-  height: 50px;
+  height: 3.1em;
 }
 /* Navbar Styling */
-#navbar{ 
+#navbar {
   display: flex;
-  height: 48px;  
   align-items: center;
-  border-bottom: 2px solid white;  
+  background-color: black;
+  border-bottom: 2px solid white;
 }
 .left {
   display: flex;
-  width:50vw ;
+  width: 55vw;
+  justify-content: space-between;
 }
 /* Search Area  */
 .search-box {
   margin-left: 20px;
   display: flex;
-  flex-flow:row wrap;
+  flex-flow: row wrap;
   align-items: center;
-  width: 11em;
 }
 #input-box {
   height: 30px;
   border-radius: 20px;
   color: white;
   border: none;
+  width: 18.2em;
 }
 #search-button {
   position: relative;
   height: 29px;
   border-radius: 20px;
-  right: 25px;  
+  left: 10em;
   border: none;
   background-color: white;
-  color: rgb(0, 0, 0); 
+  color: rgb(0, 0, 0);
 }
 .right {
   color: aliceblue;
-  width: 50vw;
-  display: flex; 
+  width: 45vw;
+  display: flex;
   flex-flow: wrap row-reverse;
-  margin-right: 5px;
+  /* margin-right: 5px; */
   justify-content: end;
   align-items: center;
 }
 #login-signup {
+  margin: 2px;
   padding: 2px;
   color: black;
   background-color: rgb(169, 229, 38);
@@ -64,13 +66,160 @@ ul {
   display: flex;
   list-style-type: none;
   gap: 15px;
+  align-items: ;
 }
 /* Status Bar  */
 #navbar-2 {
   display: flex;
   justify-content: space-around;
-  color: aliceblue; 
+  color: aliceblue;
   flex-wrap: wrap;
+}
+/* Weightage Section  */
+.weightage-container {
+  margin: 10px;
+  display: flex;
+  color: aliceblue;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.nifty50-box {
+  border: 1px solid whitesmoke;
+  width: 19.3vw;
+}
+.banking-box {
+  border: 1px solid whitesmoke;
+  width: 19.3vw;
+}
+.it-box {
+  border: 1px solid whitesmoke;
+  width: 19.3vw;
+}
+.finance-box {
+  border: 1px solid whitesmoke;
+  width: 19.3vw;
+}
+.pharma-box {
+  border: 1px solid whitesmoke;
+  width: 19.3vw;
+}
+
+/* Other Section  */
+.otherinfo {
+  color: whitesmoke;
+  height: auto;
+  width: auto;
+}
+.other-info {
+  height: 20px;
+}
+/* Info Section  */
+#info-section {
+  color: aliceblue;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+  justify-content: space-evenly;
+}
+#founder-info {
+  display: flex;
+  justify-content: center;
+}
+#founder-info img {
+  height: 8em;
+  border-radius: 50%;
+  margin: 5px;
+  padding: 5px;
+}
+#info {
+  color: white;
+  width: 35em;
+  padding: 10px;
+  text-align: justify;
+}
+#company-info {
+  color: white;
+  width: 8em;
+  margin-left: 15px;
+  padding: 10px;
+}
+#resources {
+  color: white;
+  width: 8em;
+  margin-left: 15px;
+  padding: 10px;
+}
+
+#support {
+  color: white;
+  width: 8em;
+  margin-left: 15px;
+  padding: 10px;
+}
+
+/* footer section  */
+.footer-section {
+  display: flex;
+  color: white;
+  align-items: center;
+  height: 3em;
+  flex-flow: row wrap;
+}
+.footer{
+  margin-left: 5px;
+  display: flex;  
+  width: 49vw;
+}
+#copyright {
+  display: flex;
+  padding: 5px;
+  align-items: center;
+}
+#copyright p {
+  /* /* display: flex; */
+  padding: 10px;
+  align-items: center;
+}
+#terms {
+  display: flex;
+  padding: 5px;
+  align-items: center;
+}
+#terms a {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+}
+.social{
+  display: flex;
+  width: 49vw;
+  justify-content: end;
+  color: white;
+}
+/* utility styling  */
+h2{
+  color: white;
+  text-align: center;
+}
+h3 {
+  text-align: center;
+  margin-top: 10px;
+}
+.header {
+  font-size: 20px;
+  border-bottom: 2px solid white;
+  padding: 5px;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: gray;
+  cursor: pointer;
 }
 #sensex:hover {
   font-size: 25px;
@@ -107,128 +256,4 @@ ul {
   transition: 0.5s;
   transition: 0.5s;
   color: rgb(248, 248, 248);
-}
-/* Weightage Section  */
-.weightage-container {
-  display: grid;  
-  color: aliceblue;  
- grid-gap: 0px;
-  grid-auto-flow: column;
-  margin: 0px; 
-}
-.nifty50-box {  
-  border: 1px solid whitesmoke; 
-}
-.banking-box {
-  border: 1px solid whitesmoke;  
-}
-
-.it-box {  
-  border: 1px solid whitesmoke;  
-}
-.finance-box {  
-  border: 1px solid whitesmoke; 
-}
-.pharma-box { 
-  border: 1px solid whitesmoke;
-}
-
-/* Other Section  */
-.otherinfo {
-  color: whitesmoke;
-  height: auto;
-  width: auto;
-}
-.other-info {
-  height: 20px;
-}
-/* Info Section  */
-#info-section {
-  color: aliceblue; 
-  display: flex;
-  flex-flow: row wrap;
-  margin: 5px;
-  padding:5px; 
-  justify-content: space-evenly;  
-}
-#founder-info{
-  display: flex;
-  justify-content: center;
-}
-#founder-info img{
-  height: 8em;
-  border-radius: 50%;
-  margin: 5px;
-  padding: 5px; 
-}
-h3{
-  text-align: center;
-  margin-top: 10px;
-}
-.header{
-  font-size: 20px;
-  border-bottom: 2px solid white;
-  padding: 5px; 
-}
-#info {
-  color: white; 
-  width: 35em;
-  padding: 10px;
-  text-align: justify;
-}
-#company-info {
-  color: white;  
-  width: 8em;
-  margin-left:15px;
-  padding: 10px;
-}
-#resources {
-  color: white;  
-  width: 8em; 
-  margin-left:15px;
-  padding: 10px;
-}
-
-#support {
-  color: white;
-  width: 8em;
-  margin-left:15px;
-  padding: 10px;
-}
-
-a{
-  text-decoration: none;
-  color: white;
-}
-a:hover{
-  color: gray;
-  cursor: pointer;
-
-}
-.footer-section{
-  display: flex;
-  color: white;  
-  align-items: center;
-  margin-left: 5px;
-  height: 2.5em;
-}
-#copyright{
-display: inline-flex;
-padding: 5px;
-align-items: center;
-}
-#copyright p{
-display: flex;
-padding: 10px;
-align-items: center;
-}
-#terms{
-display: flex;
-padding: 5px;
-align-items: center;
-}
-#terms a{
-display: flex;
-padding: 10px;
-align-items: center;
 }
