@@ -1,0 +1,68 @@
+@media screen and (max-width: 476px) {
+  input-box {
+    width: 5em;
+  }
+  #search-button {
+    position: relative;
+    left: 0.5em;
+  }
+}
+@media screen and (max-width: 846px) {
+  #navbar {
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .left {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .right {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  /* ul{
+    display: flex;    
+    justify-content: space-evenly;
+  } */
+  .weightage-container {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0px;
+  }
+  .nifty50-box {
+    width: 100%;
+    flex-grow: ;
+  }
+  .banking-box {
+    width: 100%;
+  }
+
+  .it-box {
+    width: 100%;
+  }
+  .finance-box {
+    width: 100%;
+  }
+  .pharma-box {
+    width: 100%;
+  }
+  .footer {
+    margin-left: 5px;
+    display: flex;
+    width: 100%;
+  }
+  #copyright p {
+    display: flex;
+    padding: 10px;
+    text-align: center;
+    flex-direction: column;
+  }
+  .social {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: white;
+  }
+}

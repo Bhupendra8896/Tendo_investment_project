@@ -1,29 +1,32 @@
 * {
   margin: 0px;
+  padding: 0px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; 
 }
 body {
-  background: url(./images/background.jpg);
+  background: url(./images/background.jpg) center center/cover;
 }
 img {
   height: 50px;
 }
-#navbar {
-  cursor: pointer;
+/* Navbar Styling */
+#navbar{ 
   display: flex;
   height: 48px;  
   align-items: center;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid white;  
 }
 .left {
   display: flex;
-  width: 50vw;
+  width:50vw ;
 }
+/* Search Area  */
 .search-box {
   margin-left: 20px;
   display: flex;
-  flex-wrap: wrap;
+  flex-flow:row wrap;
   align-items: center;
+  width: 11em;
 }
 #input-box {
   height: 30px;
@@ -33,16 +36,17 @@ img {
 }
 #search-button {
   position: relative;
-  height: 31px;
+  height: 29px;
   border-radius: 20px;
-  right: 38px;
+  right: 25px;  
   border: none;
+  background-color: white;
   color: rgb(0, 0, 0); 
 }
 .right {
   color: aliceblue;
-  display: flex;
   width: 50vw;
+  display: flex; 
   flex-flow: wrap row-reverse;
   margin-right: 5px;
   justify-content: end;
@@ -61,10 +65,12 @@ ul {
   list-style-type: none;
   gap: 15px;
 }
+/* Status Bar  */
 #navbar-2 {
   display: flex;
   justify-content: space-around;
   color: aliceblue; 
+  flex-wrap: wrap;
 }
 #sensex:hover {
   font-size: 25px;
@@ -102,62 +108,48 @@ ul {
   transition: 0.5s;
   color: rgb(248, 248, 248);
 }
+/* Weightage Section  */
 .weightage-container {
-  display: flex;
-  height: 16em;
-  width: auto;
-  color: aliceblue;
-  border: 1px solid whitesmoke;
+  display: grid;  
+  color: aliceblue;  
+ grid-gap: 0px;
+  grid-auto-flow: column;
+  margin: 0px; 
 }
-.nifty50-box {
-  width: 20%;
-  border: 1px solid whitesmoke;
-  flex:1;
+.nifty50-box {  
+  border: 1px solid whitesmoke; 
 }
 .banking-box {
-  width: 20%;
-  border: 1px solid whitesmoke;
-  flex:1;
+  border: 1px solid whitesmoke;  
 }
 
-.it-box {
-  width: 20%;
+.it-box {  
+  border: 1px solid whitesmoke;  
+}
+.finance-box {  
+  border: 1px solid whitesmoke; 
+}
+.pharma-box { 
   border: 1px solid whitesmoke;
-  flex:1;
 }
-.finance-box {
-  width: 20%;
-  border: 1px solid whitesmoke;
-  flex:1;
-}
-.pharma-box {
-  width: 20%;
-  border: 1px solid whitesmoke;
-  flex:1;
-}
-.header {
-  display: flex;
-  height: 1.5em;
-  font-size: 18px;
-  font-weight: 500;
-  flex-wrap: wrap;
-  align-items: center;
-  border-bottom: 2px solid whitesmoke;
-  color: white;
-}
+
+/* Other Section  */
 .otherinfo {
   color: whitesmoke;
+  height: auto;
+  width: auto;
 }
 .other-info {
   height: 20px;
 }
+/* Info Section  */
 #info-section {
   color: aliceblue; 
   display: flex;
   flex-flow: row wrap;
   margin: 5px;
   padding:5px; 
-  justify-content: space-around;  
+  justify-content: space-evenly;  
 }
 #founder-info{
   display: flex;
@@ -173,6 +165,11 @@ h3{
   text-align: center;
   margin-top: 10px;
 }
+.header{
+  font-size: 20px;
+  border-bottom: 2px solid white;
+  padding: 5px; 
+}
 #info {
   color: white; 
   width: 35em;
@@ -180,28 +177,20 @@ h3{
   text-align: justify;
 }
 #company-info {
-  color: white;
-  height: 25px;
+  color: white;  
   width: 8em;
   margin-left:15px;
   padding: 10px;
 }
 #resources {
-  color: white;
-  height: 25px;
+  color: white;  
   width: 8em; 
   margin-left:15px;
   padding: 10px;
 }
-/* #information {
-  color: white;
-  height: 25px;
-  width: 5em;
-  padding: 10px;
-} */
+
 #support {
   color: white;
-  height: 25px;
   width: 8em;
   margin-left:15px;
   padding: 10px;
